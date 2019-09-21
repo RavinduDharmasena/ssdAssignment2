@@ -1,0 +1,13 @@
+.loginBody{
+    text-align: center;
+    height: 100vh;
+    padding-top: 40vh;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.loginBackground{
+    background-image: url('./assets/img/social-media-background-dark-2.png');
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
