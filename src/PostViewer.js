@@ -14,6 +14,11 @@ export default function PostViewer(props) {
                 console.log(posts)
             }).catch(error => {
                 console.log(error)
+                if(error.response.status === 401){
+                  alert('User should be authenticated')
+                  localStorage.removeItem('access')
+                  props.accessToken(null)
+                }
             })
     }
 
@@ -31,7 +36,7 @@ export default function PostViewer(props) {
             return null
         });
     }
-    
+
     return (
         <div>
             <Header userData={props.userData} />
